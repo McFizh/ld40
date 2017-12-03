@@ -1,41 +1,88 @@
-// Learn cc.Class:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
-// Learn Attribute:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        this.hookInput();
+    },
 
     start () {
 
     },
 
-    // update (dt) {},
+    update (dt) {
+
+    },
+
+    /* *************************************************** */
+    
+    hookInput() {
+        const objReference = this;
+        cc.eventManager.addListener({
+            event: cc.EventListener.KEYBOARD,
+
+            onKeyPressed(kcode, e) {
+                switch(kcode) {
+                    case cc.KEY.up:
+                        objReference.setDirection(90);
+                        break;
+                    case cc.KEY.right:
+                        objReference.setDirection(180);
+                        break;
+                    case cc.KEY.down:
+                        objReference.setDirection(270);
+                        break;
+                    case cc.KEY.left: 
+                        objReference.setDirection(0);
+                        break;
+                }                    
+            },
+
+            onKeyReleased(kcode, e) {
+                switch(kcode) {
+                    case cc.KEY.up:
+                    case cc.KEY.right:
+                    case cc.KEY.down:
+                    case cc.KEY.left:
+                        objReference.closeEmitter();
+                        break;
+                }
+            }
+
+        }, this.node);
+    },
+
+    setDirection(dir) {
+        
+        var emitter = this.node.getChildByName("particlesystem").getComponent(cc.ParticleSystem);
+
+        if(this.node.rotation != dir) {
+            let dist = this.node.rotation-dir;
+
+            if( Math.abs(dist) < 5 ) {
+                this.node.rotation=dir;
+            } else if(this.node.rotation > dir) {
+                this.node.rotation-=5;                
+            } else {
+                this.node.rotation+=5;
+            }
+            
+        }
+
+        if(!emitter.active) {
+            emitter.resetSystem();            
+        }
+       
+    },
+
+    closeEmitter() {
+        var emitter = this.node.getChildByName("particlesystem").getComponent(cc.ParticleSystem);
+        emitter.stopSystem();
+
+        console.log("Close emitter");
+    }
 });

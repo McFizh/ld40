@@ -343,6 +343,138 @@
        x2="183.46916"
        y2="80.189633"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter839-0"
+       x="-0.0075211269"
+       width="1.0150423"
+       y="-0.029666668"
+       height="1.0593333">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.1681994"
+         id="feGaussianBlur841-9" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter839-0-9"
+       x="-0.0075211269"
+       width="1.0150423"
+       y="-0.029666668"
+       height="1.0593333">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.1681994"
+         id="feGaussianBlur841-9-3" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4538-5-0"
+       x="-0.024"
+       width="1.048"
+       y="-0.024"
+       height="1.048"
+       inkscape:label="Bubbly Bumps"
+       inkscape:menu="Bumps"
+       inkscape:menu-tooltip="Flexible bubbles effect with some displacement">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.32000000000000028"
+         id="feGaussianBlur4540-0-1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4599-7-7"
+         stdDeviation="0.32000000000000001" />
+      <feGaussianBlur
+         id="feGaussianBlur4601-0-4"
+         result="result0"
+         in="fbSourceGraphic"
+         stdDeviation="1.0898056155507558" />
+      <feTurbulence
+         id="feTurbulence4603-7-9"
+         baseFrequency="0.248"
+         seed="302"
+         numOctaves="10"
+         result="result1"
+         type="fractalNoise"
+         stdDeviation="1.0900000000000001" />
+      <feGaussianBlur
+         id="feGaussianBlur4605-6-3"
+         stdDeviation="0.5"
+         result="result8"
+         seed="378" />
+      <feDisplacementMap
+         yChannelSelector="A"
+         in2="result8"
+         id="feDisplacementMap4607-9-3"
+         result="result7"
+         scale="1"
+         in="result0"
+         xChannelSelector="R" />
+      <feComposite
+         in2="result1"
+         id="feComposite4609-3-3"
+         result="result2"
+         operator="in"
+         in="result7" />
+      <feComposite
+         k4="0"
+         k2="0"
+         k1="0"
+         in2="result2"
+         id="feComposite4611-4-5"
+         k3="3"
+         in="result0"
+         operator="arithmetic"
+         result="result9" />
+      <feBlend
+         in2="result2"
+         id="feBlend4613-4-9"
+         result="fbSourceGraphic"
+         mode="multiply" />
+      <feColorMatrix
+         id="feColorMatrix4615-2-5"
+         values="1 0 0 -1 0 1 0 1 -1 0 1 0 0 -1 0 -1.8 -0.5 0 5.7 -3.5 "
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         id="feGaussianBlur4617-5-6"
+         stdDeviation="0.5"
+         in="fbSourceGraphicAlpha"
+         result="result0" />
+      <feSpecularLighting
+         id="feSpecularLighting4619-0-5"
+         result="result6"
+         surfaceScale="5"
+         specularExponent="3">
+        <feDistantLight
+           id="feDistantLight4621-9-8"
+           azimuth="225"
+           elevation="10" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphicAlpha"
+         id="feComposite4623-1-2"
+         in="result6"
+         result="result2"
+         operator="in" />
+      <feComposite
+         k4="0"
+         k1="0"
+         in2="result2"
+         id="feComposite4625-5-0"
+         in="fbSourceGraphic"
+         result="result4"
+         operator="arithmetic"
+         k2="1"
+         k3="0.7" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -351,9 +483,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="350.89286"
-     inkscape:cy="844.68504"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="639.17174"
+     inkscape:cy="487.96198"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -538,15 +670,355 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Amethyst;-inkscape-font-specification:Amethyst;letter-spacing:0px;word-spacing:0px;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="48.380959"
-       y="86.845238"
+       x="65.486206"
+       y="125.33205"
        id="text886"
        inkscape:export-xdpi="108.89"
        inkscape:export-ydpi="108.89"><tspan
          sodipodi:role="line"
          id="tspan884"
-         x="48.380959"
-         y="86.845238"
+         x="65.486206"
+         y="125.33205"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75555611px;font-family:'Baby Kruffy';-inkscape-font-specification:'Baby Kruffy';fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Munchy Cell</tspan></text>
+    <path
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 64.018909,166.86482 c -2.198688,0 -3.96875,1.77006 -3.96875,3.96875 v 11.33935 H 48.7108 c -2.198688,0 -3.96875,1.77007 -3.96875,3.96875 v 9.44956 c 0,2.19868 1.770062,3.96875 3.96875,3.96875 h 11.339359 v 11.33936 c 0,2.19868 1.770062,3.96875 3.96875,3.96875 h 9.449035 c 2.198689,0 3.968749,-1.77007 3.968749,-3.96875 v -11.33936 h 11.33936 c 2.19869,0 3.96875,-1.77006 3.96875,-3.96875 v -9.44956 c 0,-2.19868 -1.77006,-3.96875 -3.96875,-3.96875 h -11.33936 v -11.33935 c 0,-2.19869 -1.77006,-3.96875 -3.968749,-3.96875 z"
+       id="rect894"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_off.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 48.458279,190.86801 8.764153,4.86619 v -9.73531 z"
+       id="path912-46"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_off.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 88.962803,190.86489 -8.76415,-4.86619 v 9.73531 z"
+       id="path912-46-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_off.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 68.744989,211.12507 4.86619,-8.76415 h -9.73531 z"
+       id="path912-46-8-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_off.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 68.741864,170.82037 -4.86619,8.76415 h 9.73531 z"
+       id="path912-46-8-3-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_off.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 119.62583,170.54457 c -2.19869,0 -3.96875,1.77006 -3.96875,3.96875 v 11.33935 h -11.33936 c -2.19869,0 -3.96875,1.77007 -3.96875,3.96875 v 9.44956 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 11.33936 v 11.33936 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 9.44904 c 2.19869,0 3.96875,-1.77007 3.96875,-3.96875 v -11.33936 h 11.33936 c 2.19869,0 3.96875,-1.77006 3.96875,-3.96875 v -9.44956 c 0,-2.19868 -1.77006,-3.96875 -3.96875,-3.96875 h -11.33936 v -11.33935 c 0,-2.19869 -1.77006,-3.96875 -3.96875,-3.96875 z"
+       id="rect894-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_left.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 104.0652,194.54776 8.76415,4.86619 v -9.73531 z"
+       id="path912-46-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_left.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 144.56973,194.54464 -8.76416,-4.86619 v 9.73531 z"
+       id="path912-46-8-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_left.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.35191,214.80482 4.86619,-8.76415 h -9.73531 z"
+       id="path912-46-8-3-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_left.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.34879,174.50012 -4.86619,8.76415 h 9.73531 z"
+       id="path912-46-8-3-4-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_left.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 26.025076,129.72775 c -2.19869,0 -3.968753,1.77006 -3.968753,3.96875 v 11.33935 H 10.716964 c -2.1986879,0 -3.9687499,1.77007 -3.9687499,3.96875 v 9.44956 c 0,2.19868 1.770062,3.96875 3.9687499,3.96875 h 11.339359 v 11.33936 c 0,2.19868 1.770063,3.96875 3.968753,3.96875 h 9.44903 c 2.19869,0 3.96875,-1.77007 3.96875,-3.96875 v -11.33936 h 11.33936 c 2.19869,0 3.96875,-1.77006 3.96875,-3.96875 v -9.44956 c 0,-2.19868 -1.77006,-3.96875 -3.96875,-3.96875 H 39.442856 V 133.6965 c 0,-2.19869 -1.77006,-3.96875 -3.96875,-3.96875 z"
+       id="rect894-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_up.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.464443,153.73094 8.764153,4.86619 v -9.73531 z"
+       id="path912-46-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_up.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.968966,153.72782 -8.76415,-4.86619 v 9.73531 z"
+       id="path912-46-8-32"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_up.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 30.751156,173.988 4.86619,-8.76415 h -9.73531 z"
+       id="path912-46-8-3-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_up.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="fill:#fafefe;fill-opacity:1;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 30.748026,133.6833 -4.86619,8.76415 h 9.73531 z"
+       id="path912-46-8-3-4-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_up.png"
+       inkscape:export-xdpi="103.67"
+       inkscape:export-ydpi="103.67" />
+    <path
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 171.51141,185.88963 c -2.19869,0 -3.96875,1.77007 -3.96875,3.96876 v 11.33935 H 156.2033 c -2.19869,0 -3.96875,1.77007 -3.96875,3.96875 v 9.44956 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 11.33936 v 11.33936 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 9.44903 c 2.19869,0 3.96875,-1.77007 3.96875,-3.96875 V 218.5848 h 11.33936 c 2.19869,0 3.96875,-1.77006 3.96875,-3.96875 v -9.44956 c 0,-2.19868 -1.77006,-3.96875 -3.96875,-3.96875 h -11.33936 v -11.33935 c 0,-2.19869 -1.77006,-3.96876 -3.96875,-3.96876 z"
+       id="rect894-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_down.png"
+       inkscape:export-xdpi="103.66765"
+       inkscape:export-ydpi="103.66765" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 155.95078,209.89283 8.76415,4.86619 v -9.73531 z"
+       id="path912-46-26"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_down.png"
+       inkscape:export-xdpi="103.66765"
+       inkscape:export-ydpi="103.66765" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 196.4553,209.88971 -8.76415,-4.86619 v 9.73531 z"
+       id="path912-46-8-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_down.png"
+       inkscape:export-xdpi="103.66765"
+       inkscape:export-ydpi="103.66765" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 176.23749,230.14989 4.86619,-8.76415 h -9.73531 z"
+       id="path912-46-8-3-99"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_down.png"
+       inkscape:export-xdpi="103.66765"
+       inkscape:export-ydpi="103.66765" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 176.23436,189.84519 -4.86619,8.76415 h 9.73532 z"
+       id="path912-46-8-3-4-61"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_down.png"
+       inkscape:export-xdpi="103.66765"
+       inkscape:export-ydpi="103.66765" />
+    <path
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 172.68063,241.98095 c -2.19869,0 -3.96875,1.77006 -3.96875,3.96875 v 11.33935 h -11.33936 c -2.19869,0 -3.96875,1.77007 -3.96875,3.96875 v 9.44956 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 11.33936 v 11.33936 c 0,2.19868 1.77006,3.96875 3.96875,3.96875 h 9.44904 c 2.19869,0 3.96875,-1.77007 3.96875,-3.96875 v -11.33936 h 11.33936 c 2.19869,0 3.96875,-1.77006 3.96875,-3.96875 v -9.44956 c 0,-2.19868 -1.77006,-3.96875 -3.96875,-3.96875 H 186.09842 V 245.9497 c 0,-2.19869 -1.77006,-3.96875 -3.96875,-3.96875 z"
+       id="rect894-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_right.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.12,265.98414 8.76415,4.86619 v -9.73531 z"
+       id="path912-46-86"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_right.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 197.62453,265.98102 -8.76416,-4.86619 v 9.73531 z"
+       id="path912-46-8-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_right.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 177.40671,286.2412 4.86619,-8.76415 h -9.73531 z"
+       id="path912-46-8-3-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_right.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <path
+       style="fill:none;stroke:#178f93;stroke-width:0.78584921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 177.40359,245.9365 -4.86619,8.76415 h 9.73531 z"
+       id="path912-46-8-3-4-69"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\keyboard_right.png"
+       inkscape:export-xdpi="103.66763"
+       inkscape:export-ydpi="103.66763" />
+    <rect
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:0.78599995;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1325"
+       width="131.53571"
+       height="56.69643"
+       x="6.0495286"
+       y="232.86261"
+       ry="7.9709015"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\how_to_play.png"
+       inkscape:export-xdpi="95.980003"
+       inkscape:export-ydpi="95.980003" />
+    <rect
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:0.51286179;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1327"
+       width="58.665844"
+       height="11.148299"
+       x="5.9129586"
+       y="225.81964"
+       ry="4.274529"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\how_to_play.png"
+       inkscape:export-xdpi="95.980003"
+       inkscape:export-ydpi="95.980003" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="10.685408"
+       y="233.17662"
+       id="text1331"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\how_to_play.png"
+       inkscape:export-xdpi="95.980003"
+       inkscape:export-ydpi="95.980003"><tspan
+         sodipodi:role="line"
+         id="tspan1329"
+         x="10.685408"
+         y="233.17662"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic';stroke-width:0.26458332">How to play</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="71.562447"
+       y="249.42601"
+       id="text1335"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\how_to_play.png"
+       inkscape:export-xdpi="95.980003"
+       inkscape:export-ydpi="95.980003"><tspan
+         sodipodi:role="line"
+         id="tspan1333"
+         x="71.562447"
+         y="249.42601"
+         style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332">Use cursor keys (or virtual keys) to</tspan><tspan
+         sodipodi:role="line"
+         x="72.540855"
+         y="260.00934"
+         style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1337">move your cell. Eat green slime and </tspan><tspan
+         sodipodi:role="line"
+         x="71.562447"
+         y="270.59268"
+         style="font-size:7.05555534px;line-height:1;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1339">avoid red, as they will try to eat you.</tspan></text>
+    <rect
+       id="rect32-5"
+       width="53.672619"
+       height="13.607142"
+       x="67.509834"
+       y="66.54554"
+       style="fill:#ffb83b;fill-opacity:1;stroke:#000041;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter839-0)"
+       ry="3.96875"
+       inkscape:export-xdpi="93.25"
+       inkscape:export-ydpi="93.25"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Menuitems\menuitem4_off.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Amethyst;-inkscape-font-specification:Amethyst;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="82.920937"
+       y="76.476479"
+       id="text845-6"
+       inkscape:export-xdpi="93.25"
+       inkscape:export-ydpi="93.25"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Menuitems\menuitem4_off.png"><tspan
+         sodipodi:role="line"
+         id="tspan843-3"
+         x="82.920937"
+         y="76.476479"
+         style="stroke-width:0.26458332">got it</tspan></text>
+    <rect
+       id="rect32-5-7"
+       width="53.672619"
+       height="13.607142"
+       x="131.38725"
+       y="65.690025"
+       style="fill:#ffb83b;fill-opacity:1;stroke:#000041;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter839-0-9)"
+       ry="3.96875"
+       inkscape:export-xdpi="93.25"
+       inkscape:export-ydpi="93.25"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Menuitems\menuitem4_on.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Amethyst;-inkscape-font-specification:Amethyst;letter-spacing:0px;word-spacing:0px;fill:#bb6116;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="146.79836"
+       y="75.620964"
+       id="text845-6-4"
+       inkscape:export-xdpi="93.25"
+       inkscape:export-ydpi="93.25"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Menuitems\menuitem4_on.png"><tspan
+         sodipodi:role="line"
+         id="tspan843-3-4"
+         x="146.79836"
+         y="75.620964"
+         style="stroke-width:0.26458332;fill:#bb6116;fill-opacity:1;">got it</tspan></text>
+    <circle
+       id="path10-5-0"
+       cx="61.232143"
+       cy="92.514877"
+       r="13.607142"
+       style="fill:#b9242e;fill-opacity:1;stroke:#3eb4ff;stroke-width:0.26458332;stroke-opacity:1;filter:url(#filter4538-5-0)"
+       transform="matrix(0.38445445,0.58018632,-0.58018632,0.38445445,73.43256,3.003406)"
+       inkscape:export-xdpi="92.32"
+       inkscape:export-ydpi="92.32"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Lifeforms\lifeform2.png" />
   </g>
 </svg>
