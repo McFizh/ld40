@@ -34,7 +34,7 @@ cc.Class({
     start () {
         var componentRef = this;
 
-        this.node.on("mousedown", function() {
+        this.node.on("touchstart", function() {
             var btn = this.getComponent(cc.Button);
 
             if(componentRef.audioOn) {

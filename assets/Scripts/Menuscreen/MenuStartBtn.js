@@ -10,7 +10,7 @@ cc.Class({
 
     start () {
         var componentRef = this;
-        this.node.on("mousedown",function() {
+        this.node.on("touchstart",function() {
             cc.director.loadScene("PlayField");
         });
     },

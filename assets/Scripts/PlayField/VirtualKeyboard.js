@@ -11,20 +11,55 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
-
-    start () {
-        const objRef = this;
-
-        this.node.on("mousedown", function () {
-            objRef.node.getComponent(cc.Sprite).spriteFrame = objRef.keyUp;
-        });
-
+    onLoad () {
+        this.touchActive = false;
+        this.touchDir = 0;
     },
 
-    // update (dt) {},
+    start () {
+        var releaseEvent = this.touchReleaseEvent.bind(this);
+        var touchEvent = this.touchBeginEvent.bind(this);
 
-    keyReleaseEvent () {
-        this.node.getComponent(cc.Sprite).spriteFrame = this.keyOff;        
+        this.node.on("touchend", releaseEvent);
+        this.node.on("touchcancel", releaseEvent);
+        this.node.on("touchstart", touchEvent);
+    },
+
+    update (dt) {},
+
+    touchBeginEvent(touch) {
+        var objRef = this;
+        var xPos =  touch.getLocation().x - objRef.node.x;
+        var yPos =  touch.getLocation().y - objRef.node.y;
+        var sprite = objRef.node.getComponent(cc.Sprite);
+
+        if(xPos >= 60 && xPos<=140) {
+            if(yPos<=60) {
+                sprite.spriteFrame = objRef.keyDown;
+                objRef.touchActive = true;
+                objRef.touchDir = 270;
+            } else if(yPos >= 140) {
+                sprite.spriteFrame = objRef.keyUp;
+                objRef.touchActive = true;
+                objRef.touchDir = 90;
+            }
+        }
+        
+        if(yPos >= 60 && yPos <= 140) {
+            if(xPos<=60) {
+                sprite.spriteFrame = objRef.keyLeft;
+                objRef.touchActive = true;
+                objRef.touchDir = 180;
+            } else if(xPos >= 140) {
+                sprite.spriteFrame = objRef.keyRight;
+                objRef.touchActive = true;
+                objRef.touchDir = 0;
+            }
+        } 
+    },
+
+    touchReleaseEvent () {
+        this.node.getComponent(cc.Sprite).spriteFrame = this.keyOff;      
+        this.touchActive = false;  
     },
 });

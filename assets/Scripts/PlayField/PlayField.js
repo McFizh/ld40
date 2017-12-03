@@ -48,7 +48,7 @@ cc.Class({
         this.tutorialNode.y = 0;
 
         const objRef = this;
-        var btn = this.tutorialNode.getChildByName("button").on("mousedown", function() {
+        var btn = this.tutorialNode.getChildByName("button").on("touchbegin", function() {
             objRef.hideTutorial();
         });
     },
@@ -58,10 +58,11 @@ cc.Class({
         this.virtualKeyNode.active = true;
         this.playerNode.active = true;
 
-        const objRef = this;
-        this.node.on("mouseup", function () {
-            objRef.virtualKeyNode.getComponent('VirtualKeyboard').keyReleaseEvent();
-        });
+        const virtKeyboard = this.virtualKeyNode.getComponent('VirtualKeyboard');
+
+        var releaseEvent = virtKeyboard.touchReleaseEvent.bind(virtKeyboard);
+        this.node.on("touchend", releaseEvent);
+        this.node.on("touchcancel", releaseEvent);
     }
 
 });
