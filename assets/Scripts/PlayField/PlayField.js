@@ -48,7 +48,7 @@ cc.Class({
         this.tutorialNode.y = 0;
 
         const objRef = this;
-        var btn = this.tutorialNode.getChildByName("button").on("touchbegin", function() {
+        var btn = this.tutorialNode.getChildByName("button").on("touchstart", function() {
             objRef.hideTutorial();
         });
     },
