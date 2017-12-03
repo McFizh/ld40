@@ -14,6 +14,9 @@ cc.Class({
     onLoad () {
         this.touchActive = false;
         this.touchDir = 0;
+        this.playerNode = cc.director.getScene().
+            getChildByName("Player").
+            getComponent("PlayerObject");
     },
 
     start () {
@@ -25,7 +28,15 @@ cc.Class({
         this.node.on("touchstart", touchEvent);
     },
 
-    update (dt) {},
+    update (dt) {
+        if(this.touchActive) {
+            if(this.playerNode!=null) {
+                this.playerNode.setDirection(this.touchDir);
+            }
+        }
+    },
+
+    /* ************************************************************** */
 
     touchBeginEvent(touch) {
         var objRef = this;
@@ -37,11 +48,11 @@ cc.Class({
             if(yPos<=60) {
                 sprite.spriteFrame = objRef.keyDown;
                 objRef.touchActive = true;
-                objRef.touchDir = 270;
+                objRef.touchDir = 180;
             } else if(yPos >= 140) {
                 sprite.spriteFrame = objRef.keyUp;
                 objRef.touchActive = true;
-                objRef.touchDir = 90;
+                objRef.touchDir = 0;
             }
         }
         
@@ -49,17 +60,21 @@ cc.Class({
             if(xPos<=60) {
                 sprite.spriteFrame = objRef.keyLeft;
                 objRef.touchActive = true;
-                objRef.touchDir = 180;
+                objRef.touchDir = 270;
             } else if(xPos >= 140) {
                 sprite.spriteFrame = objRef.keyRight;
                 objRef.touchActive = true;
-                objRef.touchDir = 0;
+                objRef.touchDir = 90;
             }
         } 
     },
 
     touchReleaseEvent () {
         this.node.getComponent(cc.Sprite).spriteFrame = this.keyOff;      
-        this.touchActive = false;  
-    },
+        this.touchActive = false;
+
+        if(this.playerNode!=null) {
+            this.playerNode.closeEmitter();
+        }
+},
 });

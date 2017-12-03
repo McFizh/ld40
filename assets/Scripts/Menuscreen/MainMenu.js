@@ -13,34 +13,32 @@ cc.Class({
             type: cc.Node
         },
 
-        playerObj: {
+        song1: {
             default: null,
-            type: cc.Node
-        },
-
-        foodObj: {
-            default: null,
-            type: cc.Node
+            url: cc.AudioClip
         }
 
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
+    onLoad () { 
         cc.director.getPhysicsManager().enabled = true;
 
-        this.playerRigidbody = this.playerObj.getComponent(cc.RigidBody);
-        this.foodRigidbody = this.foodObj.getComponent(cc.RigidBody);
+        var node = new cc.Node();
+        node.name = "AudioPlayer";
+        node.addComponent(cc.AudioSource);
+        var ac = node.getComponent(cc.AudioSource);
+        ac.clip = this.song1;
+        ac.loop = true;
+        ac.play();
+
+        window.audioPlayer = node;
     },
 
     start () {
         var anim = this.getComponent(cc.Animation);
         anim.play();
-
-        this.foodRigidbody.applyLinearImpulse( new cc.Vec2(15, 0), this.foodRigidbody.getWorldCenter () );
-
-        this.playerRigidbody.applyLinearImpulse( new cc.Vec2(12.0,0), this.foodRigidbody.getWorldCenter () );
     },
 
     update (dt) {

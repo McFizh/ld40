@@ -37,16 +37,24 @@ cc.Class({
         this.node.on("touchstart", function() {
             var btn = this.getComponent(cc.Button);
 
+            var node = window.audioPlayer.getComponent( cc.AudioSource );
+
             if(componentRef.audioOn) {
                 componentRef.audioOn = false;
+
                 btn.normalSprite = componentRef.audioOffBtnOff;
                 btn.hoverSprite = componentRef.audioOffBtnOn;
                 btn.pressedSprite = componentRef.audioOffBtnOn;
+
+                node.stop();
             } else {
                 componentRef.audioOn = true;                
+
                 btn.normalSprite = componentRef.audioOnBtnOff;
                 btn.hoverSprite = componentRef.audioOnBtnOn;
                 btn.pressedSprite = componentRef.audioOnBtnOn;
+                
+                node.play();
             }
         });
     },
