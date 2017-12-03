@@ -25,15 +25,17 @@ cc.Class({
     onLoad () { 
         cc.director.getPhysicsManager().enabled = true;
 
-        var node = new cc.Node();
-        node.name = "AudioPlayer";
-        node.addComponent(cc.AudioSource);
-        var ac = node.getComponent(cc.AudioSource);
-        ac.clip = this.song1;
-        ac.loop = true;
-        ac.play();
+        if(typeof window.audioPlayer == "undefined" || window.audioPlayer == null) {
+            var node = new cc.Node();
+            node.name = "AudioPlayer";
+            node.addComponent(cc.AudioSource);
+            var ac = node.getComponent(cc.AudioSource);
+            ac.clip = this.song1;
+            ac.loop = true;
+            ac.play();
 
-        window.audioPlayer = node;
+            window.audioPlayer = node;
+        }
     },
 
     start () {

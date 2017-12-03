@@ -24,7 +24,40 @@ cc.Class({
         if(this.keyIsDown) {
             this.setDirection(this.keyDirection);
         }
+
+        // Limit objects area
+        if(this.node.x > 900) {
+            this.node.x = 898.0;
+            this.rigidBodyRef.linearVelocity = new cc.v2(0,0);
+        } else if(this.node.x<-900) {
+            this.node.x = -898.0;
+            this.rigidBodyRef.linearVelocity = new cc.v2(0,0);            
+        } else if(this.node.y > 900) {
+            this.node.y = 898.0;
+            this.rigidBodyRef.linearVelocity = new cc.v2(0,0);            
+        } else if(this.node.y<-900) {
+            this.node.y = -898.0;
+            this.rigidBodyRef.linearVelocity = new cc.v2(0,0);            
+        }
     },
+
+    /* *************************************************** */
+    onBeginContact (contact, selfCollider, otherCollider) {
+        if(otherCollider.node.name=="greenSlime") {
+            this.node.scale+=otherCollider.node.scale/20;
+            otherCollider.node.removeFromParent();
+            otherCollider.node.destroy();
+        } 
+
+        if(otherCollider.node.name=="redSlime") {
+            this.node.scale-=otherCollider.node.scale/10;
+            if(this.node.scale < 0.3) {
+                this.node.scale = 0.3;
+            }
+            otherCollider.node.removeFromParent();
+            otherCollider.node.destroy();
+        }            
+    },    
 
     /* *************************************************** */
     

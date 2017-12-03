@@ -483,9 +483,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="639.17174"
-     inkscape:cy="487.96198"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="491.40692"
+     inkscape:cy="422.45329"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1020,5 +1020,30 @@
        inkscape:export-xdpi="92.32"
        inkscape:export-ydpi="92.32"
        inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\Lifeforms\lifeform2.png" />
+    <rect
+       style="opacity:1;fill:#ffb83b;fill-opacity:1;stroke:#178f93;stroke-width:0.81667417;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect141"
+       width="17.183327"
+       height="17.183327"
+       x="154.32884"
+       y="156.95908"
+       ry="3.1380694"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\homekey.png"
+       inkscape:export-xdpi="103"
+       inkscape:export-ydpi="103" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75238609px;line-height:1.25;font-family:octicons;-inkscape-font-specification:octicons;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.34380963"
+       x="155.85153"
+       y="169.41698"
+       id="text952"
+       inkscape:export-filename="C:\Users\Pekka\Documents\LD40\assets\Sprites\VirtKey\homekey.png"
+       inkscape:export-xdpi="103"
+       inkscape:export-ydpi="103"><tspan
+         sodipodi:role="line"
+         id="tspan950"
+         x="155.85153"
+         y="169.41698"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:octicons;-inkscape-font-specification:octicons;stroke-width:0.34380963"></tspan></text>
   </g>
 </svg>
